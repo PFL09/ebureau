@@ -16,13 +16,14 @@ pipeline {
             }
         }
         
-        stage('Deploy') { 
+        stage('Package') { 
             steps {
                 // 
                 echo 'Etape Packaging'
             }
-            
-         stage('Test') { 
+        }
+        
+         stage('deploy') { 
             steps {
                 // 
                 echo 'Etape Deploy'
