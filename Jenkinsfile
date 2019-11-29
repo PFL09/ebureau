@@ -9,6 +9,8 @@ pipeline {
                 // 
                 echo 'Etape compile'
                 bat 'mvn clean compile'
+                bat 'mvn clean test'
+                bat 'mvn clean package'
             }
         }
         
