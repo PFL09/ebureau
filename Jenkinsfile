@@ -1,10 +1,14 @@
 pipeline {
-    agent any 
+    agent any
+    tools {
+            maven 'M3'
+    }
     stages {
         stage('Build') { 
             steps {
                 // 
                 echo 'Etape compile'
+                bat 'mvm clean compile'
             }
         }
         
