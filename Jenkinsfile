@@ -26,6 +26,7 @@ pipeline {
             steps {
                 // 
                 echo 'Etape Packaging'
+                 bat 'mvn clean package'
             }
         }
         
@@ -33,7 +34,7 @@ pipeline {
             steps {
                 // 
                 echo 'Etape Deploy'
-                bat 'mvn clean package'
+               
                
             }
         }
