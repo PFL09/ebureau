@@ -9,8 +9,8 @@ pipeline {
                 // 
                 echo 'Etape compile'
                 bat 'mvn clean compile'
-                bat 'mvn clean test'
-                bat 'mvn clean package'
+                
+                
             }
         }
         
@@ -18,6 +18,7 @@ pipeline {
             steps {
                 // 
                 echo 'Etape Test'
+                bat 'mvn clean test'
             }
         }
         
@@ -32,7 +33,8 @@ pipeline {
             steps {
                 // 
                 echo 'Etape Deploy'
-                bat 'copy 
+                bat 'mvn clean package'
+               
             }
         }
     }
