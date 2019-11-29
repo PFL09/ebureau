@@ -34,6 +34,7 @@ pipeline {
             steps {
                 // 
                 echo 'Etape Deploy'
+                bat 'copy target/ebureau.war  C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps'
                
                
             }
