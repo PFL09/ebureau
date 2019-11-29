@@ -8,7 +8,7 @@ pipeline {
             steps {
                 // 
                 echo 'Etape compile'
-                bat 'mvm clean compile'
+                bat 'mvn clean compile'
             }
         }
         
